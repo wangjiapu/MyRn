@@ -39,8 +39,8 @@ export default class App extends Component<Props> {
                         title="消息"
                         titleStyle={styles.tabText}
                         selectedTitleStyle={styles.selectedTabText}
-                        renderIcon={() => <Image style={styles.icon} source={require('./images/home.png')}/>}
-                        renderSelectedIcon={() => <Image style={styles.icon} source={require('./images/home.png')}/>}
+                        renderIcon={() => <Image style={styles.icon} source={require('./images/message.png')}/>}
+                        renderSelectedIcon={() => <Image style={styles.icon} source={require('./images/message.png')}/>}
                         onPress={() => this.setState({selectedTab: '消息'})}>
                         <Message/>
                     </TabNavigator.Item>
@@ -49,10 +49,10 @@ export default class App extends Component<Props> {
                         title="联系人"
                         titleStyle={styles.tabText}
                         selectedTitleStyle={styles.selectedTabText}
-                        renderIcon={() => <Image style={styles.icon} source={require('./images/home.png')}/>}
-                        renderSelectedIcon={() => <Image style={styles.icon} source={require('./images/home.png')}/>}
+                        renderIcon={() => <Image style={styles.icon} source={require('./images/friend.png')}/>}
+                        renderSelectedIcon={() => <Image style={styles.icon} source={require('./images/friend.png')}/>}
                         onPress={() => this.setState({selectedTab: '联系人'})}>
-                       <Account/>
+                        <Account/>
                     </TabNavigator.Item>
                 </TabNavigator>
             </View>
